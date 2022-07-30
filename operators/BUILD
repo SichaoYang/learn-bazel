@@ -47,3 +47,12 @@ cc_library(
         ":operator",
     ],
 )
+
+cc_test(
+    name = "division_test",
+    srcs = ["division_test.cc"],
+    deps = [
+        ":division",
+        "@com_google_googletest//:gtest_main",
+    ]
+)
