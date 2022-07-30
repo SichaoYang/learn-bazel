@@ -36,6 +36,7 @@ cc_library(
     hdrs = ["division.h"],
     deps = [
         ":operator",
+        "@com_github_google_glog//:glog",
     ],
 )
 
