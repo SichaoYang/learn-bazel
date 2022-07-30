@@ -5,6 +5,7 @@ cc_binary(
     srcs = ["main.cc"],
     deps = [
         "//calculator:calculator",
+        "//interface:cc_operator_proto",
         "//operators:operator",
     ],
 )

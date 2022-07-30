@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package interface;
+
+// Next Id: 2
+enum UnaryOperatorType {
+  kMinus = 0;
+}
+
+// Next Id: 5
+enum BinaryOperatorType {
+  kAddition = 0;
+  kSubtraction = 1;
+  kMultiplication = 2;
+  kDivision = 3;
+}

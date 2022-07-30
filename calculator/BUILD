@@ -12,6 +12,7 @@ cc_library(
         "//factories:minus_factory",
         "//factories:multiplication_factory",
         "//factories:subtraction_factory",
+        "//interface:cc_operator_proto",
         "//operators:operator",
     ],
 )
