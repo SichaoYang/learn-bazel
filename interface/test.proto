@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+package interface;
+
+import "interface/operator.proto";
+
+// Next Id: 4
+message UnaryOperatorTestCase {
+  optional UnaryOperatorType operator_type = 1;
+  optional double operand = 2;
+  optional double value = 3;
+}
+
+// Next Id: 5
+message BinaryOperatorTestCase {
+  optional BinaryOperatorType operator_type = 1;
+  optional double lhs_operand = 2;
+  optional double rhs_operand = 3;
+  optional double value = 4;
+}
+
+// Next Id: 3
+message CalculatorTestSet {
+  repeated UnaryOperatorTestCase unary_operator_test_case = 1;
+  repeated BinaryOperatorTestCase binary_operator_test_case = 2;
+}

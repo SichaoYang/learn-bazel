@@ -1,5 +1,3 @@
-load("@rules_cc//cc:defs.bzl", "cc_library")
-
 package(default_visibility = ["//visibility:public"])
 
 cc_library(
@@ -16,3 +14,17 @@ cc_library(
         "//operators:operator",
     ],
 )
+
+cc_test(
+    name = "calculator_test",
+    srcs = ["calculator_test.cc"],
+    data = [
+        "//config:calculator_test",
+    ],
+    deps = [
+        ":calculator",
+        "//interface:cc_test_proto",
+        "@com_google_googletest//:gtest_main",
+    ]
+)
+
